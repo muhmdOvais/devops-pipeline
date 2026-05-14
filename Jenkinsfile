@@ -5,7 +5,7 @@ pipeline {
 
         stage('Git Checkout') {
             steps {
-                git 'YOUR_GITHUB_REPO_URL'
+                git 'https://github.com/muhmdOvais/devops-pipeline.git'
             }
         }
 
