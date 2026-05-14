@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Git Checkout') {
-            steps {
-                git 'https://github.com/muhmdOvais/devops-pipeline.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 sh 'docker build -t flask-app .'
